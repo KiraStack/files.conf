@@ -1,0 +1,22 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "escape",
+        "command": "-workbench.action.terminal.clearSelection",
+        "when": "terminalFocus && terminalProcessSupported && terminalTextSelected && !terminalFindVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.clear"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    }
+]

@@ -1,0 +1,3 @@
+[submodule "eggs/nushell/script"]
+	path = eggs/nushell/scripts
+	url = https://github.com/nushell/nu_scripts.git

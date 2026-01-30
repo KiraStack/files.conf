@@ -1,0 +1,182 @@
+{
+    // Window
+    "window.autoDetectColorScheme": true,
+    "window.title": "${appName}",
+    "window.menuBarVisibility": "toggle", // Hide menu unless `alt` pressed
+    "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
+    // "chat.commandCenter.enabled": false,
+
+    // Telemtry
+    // "telemetry.telemetryLevel": "off",
+    // "telemetry.editStats.enabled": false,
+    // "telemetry.feedback.enabled": false,
+
+    // Theme
+    "workbench.preferredLightColorTheme": "Tokyo Night",
+    "workbench.preferredDarkColorTheme": "Tokyo Night",
+    "workbench.preferredHighContrastLightColorTheme": "Tokyo Night",
+    "workbench.preferredHighContrastColorTheme": "Tokyo Night",
+    "workbench.iconTheme": "charmed-icons",
+    "workbench.statusBar.visible": false,
+
+    // Workspace
+    "breadcrumbs.enabled": false, // default: true
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.highlightModifiedTabs": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.wrapTabs": false,
+    "workbench.editor.showIcons": false,
+    // "workbench.editor.showTabs": "single",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.activityBar.location": "hidden", // default: "top"
+    "workbench.layoutControl.enabled": false,
+
+    // Layout
+    "workbench.sideBar.location": "left",
+    "workbench.panel.defaultLocation": "bottom",
+
+    // Cursor
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "line",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "JetBrainsMono NF, Fira Code, monospace",
+    "editor.fontLigatures": true,
+
+    // Terminal
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "JetBrainsMono NF, Fira Code, monospace",
+
+    // Editor
+    "editor.guides.indentation": false,
+    "editor.minimap.enabled": false,
+    "editor.glyphMargin": true,
+    "editor.renderLineHighlight": "none",
+    // "editor.lineNumbers": "relative",
+
+    // Explorer
+    "explorer.compactFolders": true,
+    "explorer.autoReveal": true,
+
+    // Formatting
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.showWords": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+
+    // Files
+    // "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    // Git
+    "git.autofetch": true,
+    "git.inputValidationSubjectLength": 50,
+    "git.decorations.enabled": true,
+
+    // Formatters
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[css]": {},
+    "[html]": {},
+    "[java]": {},
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    },
+    "[luau]": { "editor.defaultFormatter": "JohnnyMorganz.stylua" },
+    "[python]": {},
+    "[rust]": {},
+    "[toml]": {
+        "editor.defaultFormatter": "be5invis.toml"
+    },
+    "[javascript]": {},
+    // "[javascriptreact]": {},
+    "[typescript]": {},
+    // "[typescriptreact]": {},
+
+    // Codeium
+    "codeium.enableConfig": {
+        "*": true,
+        "luau": true
+    },
+
+    // Code Runner
+    // "code-runner.runInTerminal": true,
+    // "code-runner.saveFileBeforeRun": true,
+    // "code-runner.executorMap": {
+    //     "javascript": "node",
+    //     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    //     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //     "zig": "zig run",
+    //     "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //     "php": "php",
+    //     "python": "python -u",
+    //     "perl": "perl",
+    //     "perl6": "perl6",
+    //     "ruby": "ruby",
+    //     "go": "go run",
+    //     "lua": "lua",
+    //     "groovy": "groovy",
+    //     "powershell": "powershell -ExecutionPolicy ByPass -File",
+    //     "bat": "cmd /c",
+    //     "shellscript": "bash",
+    //     "fsharp": "fsi",
+    //     "csharp": "scriptcs",
+    //     "vbscript": "cscript //Nologo",
+    //     "typescript": "tsx",
+    //     "coffeescript": "coffee",
+    //     "scala": "scala",
+    //     "swift": "swift",
+    //     "julia": "julia",
+    //     "crystal": "crystal",
+    //     "ocaml": "ocaml",
+    //     "r": "Rscript",
+    //     "applescript": "osascript",
+    //     "clojure": "lein exec",
+    //     "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    //     "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    //     "racket": "racket",
+    //     "scheme": "csi -script",
+    //     "ahk": "autohotkey",
+    //     "autoit": "autoit3",
+    //     "dart": "dart",
+    //     "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    //     "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    //     "haskell": "runghc",
+    //     "nim": "nim compile --verbosity:0 --hints:off --run",
+    //     "lisp": "sbcl --script",
+    //     "kit": "kitc --run",
+    //     "v": "v run",
+    //     "sass": "sass --style expanded",
+    //     "scss": "scss --style expanded",
+    //     "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    //     "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //     "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //     "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //     "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    //     "sml": "cd $dir && sml $fileName",
+    //     "mojo": "mojo run",
+    //     "erlang": "escript",
+    //     "spwn": "spwn build",
+    //     "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+    //     "gleam": "gleam run -m $fileNameWithoutExt"
+    // },
+
+    // Prettier
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.arrowParens": "always",
+    "makefile.configureOnOpen": true
+}
