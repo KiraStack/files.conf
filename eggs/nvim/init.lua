@@ -46,6 +46,10 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 vim.o.laststatus = 0
 
+-- Disable netrw (using Fyler)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Basic Keybinds
 -- See `:help vim.keymap.set()`
 
@@ -303,6 +307,18 @@ require("pckr").add({
 			})
 		end,
 	},
+
+	{ -- File Explorer
+		"A7Lavinraj/fyler.nvim",
+		config = function()
+			local fyler = require("fyler")
+			fyler.setup()
+			vim.keymap.set("n", "<leader>e", function()
+				fyler.open({ kind = "split_left_most" })
+			end, { unique = true, desc = "Open Fyler View" })
+		end,
+	},
+
 
 	{ -- Syntax
 		"nvim-treesitter/nvim-treesitter",
