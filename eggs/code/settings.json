@@ -13,11 +13,11 @@
     // "telemetry.feedback.enabled": false,
 
     // Theme
-    "workbench.preferredLightColorTheme": "Tokyo Night",
-    "workbench.preferredDarkColorTheme": "Tokyo Night",
-    "workbench.preferredHighContrastLightColorTheme": "Tokyo Night",
-    "workbench.preferredHighContrastColorTheme": "Tokyo Night",
-    "workbench.iconTheme": "charmed-icons",
+    "workbench.preferredLightColorTheme": "Pierre Light",
+    "workbench.preferredDarkColorTheme": "Pierre Dark",
+    "workbench.preferredHighContrastLightColorTheme": "Pierre Light",
+    "workbench.preferredHighContrastColorTheme": "Pierre Dark",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
     "workbench.statusBar.visible": false,
 
     // Workspace
@@ -92,13 +92,13 @@
     "[html]": {},
     "[java]": {},
     "[lua]": {
-        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+        "editor.defaultFormatter": "sumneko.lua"
     },
     "[luau]": { "editor.defaultFormatter": "JohnnyMorganz.stylua" },
     "[python]": {},
     "[rust]": {},
     "[toml]": {
-        "editor.defaultFormatter": "be5invis.toml"
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
     },
     "[javascript]": {},
     // "[javascriptreact]": {},
