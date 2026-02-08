@@ -42,12 +42,12 @@
     "editor.cursorBlinking": "expand",
     "editor.cursorStyle": "line",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "JetBrainsMono NF, Fira Code, monospace",
+    "editor.fontFamily": "JetBrainsMono NF, Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
 
     // Terminal
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "JetBrainsMono NF, Fira Code, monospace",
+    "terminal.integrated.fontFamily": "JetBrainsMono NF, Consolas, 'Courier New', monospace",
 
     // Editor
     "editor.guides.indentation": false,
@@ -177,6 +177,5 @@
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "all",
-    "prettier.arrowParens": "always",
-    "makefile.configureOnOpen": true
+    "prettier.arrowParens": "always"
 }
