@@ -5,19 +5,28 @@
     "window.menuBarVisibility": "toggle", // Hide menu unless `alt` pressed
     "window.titleBarStyle": "custom",
     "window.commandCenter": false,
-    // "chat.commandCenter.enabled": false,
+    "chat.commandCenter.enabled": false, // chat, for me, counts as window component, so it stays here...
 
     // Telemtry
-    // "telemetry.telemetryLevel": "off",
-    // "telemetry.editStats.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "telemetry.editStats.enabled": false,
     // "telemetry.feedback.enabled": false,
 
+    // Extensions
+    "extensions.allowed": {
+        "ms-vscode.cpptools": "stable", // C/C++ LSP
+        "JohnnyMorganz.luau-lsp": "stable", // ROBLOX LSP
+        "esbenp.prettier-vscode": "stable", // Code formatting
+        "Codeium.codeium": "stable" // Autocompletion
+        // ...any other extensions are bloat to be honest...!
+    },
+
     // Theme
-    "workbench.preferredLightColorTheme": "Pierre Light",
-    "workbench.preferredDarkColorTheme": "Pierre Dark",
-    "workbench.preferredHighContrastLightColorTheme": "Pierre Light",
-    "workbench.preferredHighContrastColorTheme": "Pierre Dark",
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
+    "workbench.preferredHighContrastColorTheme": "Default High Contrast",
+    "workbench.iconTheme": "vs-seti",
     "workbench.statusBar.visible": false,
 
     // Workspace
@@ -72,7 +81,7 @@
     },
 
     // Files
-    // "files.autoSave": "onFocusChange",
+    "files.autoSave": "onFocusChange",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
@@ -88,28 +97,22 @@
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
-    "[css]": {},
-    "[html]": {},
-    "[java]": {},
-    "[lua]": {
-        "editor.defaultFormatter": "sumneko.lua"
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[luau]": { "editor.defaultFormatter": "JohnnyMorganz.stylua" },
-    "[python]": {},
-    "[rust]": {},
-    "[toml]": {
-        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[javascript]": {},
+    // "[java]": {},
+    // "[lua]": {}, // use selene
+    // "[luau]": {}, // use selene
+    // "[python]": {},
+    // "[rust]": {},
+    // "[toml]": {},
+    // "[javascript]": {},
     // "[javascriptreact]": {},
-    "[typescript]": {},
+    // "[typescript]": {},
     // "[typescriptreact]": {},
-
-    // Codeium
-    "codeium.enableConfig": {
-        "*": true,
-        "luau": true
-    },
 
     // Code Runner
     // "code-runner.runInTerminal": true,
@@ -177,5 +180,11 @@
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "all",
-    "prettier.arrowParens": "always"
+    "prettier.arrowParens": "always",
+
+    // Codeium
+    "codeium.enableConfig": {
+        "*": true,
+        "luau": true
+    }
 }
