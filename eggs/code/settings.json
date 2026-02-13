@@ -5,7 +5,6 @@
     "window.menuBarVisibility": "toggle", // Hide menu unless `alt` pressed
     "window.titleBarStyle": "custom",
     "window.commandCenter": false,
-    "chat.commandCenter.enabled": false, // chat, for me, counts as window component, so it stays here...
 
     // Telemtry
     "telemetry.telemetryLevel": "off",
@@ -14,20 +13,21 @@
 
     // Extensions
     "extensions.allowed": {
+        "enkia.tokyo-night": "stable", // Theme
         "littensy.charmed-icons": "stable", // Icons
         "ms-vscode.cpptools": "stable", // C/C++ LSP
         "JohnnyMorganz.luau-lsp": "stable", // ROBLOX LSP
         "esbenp.prettier-vscode": "stable", // Code formatting
         "JohnnyMorganz.stylua": "stable", // Code formatting (temporary)
-        "Codeium.codeium": "stable" // Autocompletion
+        "Codeium.codeium": "stable", // Autocompletion
         // ...any other extensions are bloat to be honest...!
     },
 
     // Theme
-    "workbench.preferredLightColorTheme": "Default Light Modern",
-    "workbench.preferredDarkColorTheme": "Default Dark Modern",
-    "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
-    "workbench.preferredHighContrastColorTheme": "Default High Contrast",
+    "workbench.preferredLightColorTheme": "Tokyo Night Light",
+    "workbench.preferredDarkColorTheme": "Tokyo Night",
+    "workbench.preferredHighContrastLightColorTheme": "Tokyo Night Light",
+    "workbench.preferredHighContrastColorTheme": "Tokyo Night",
     "workbench.iconTheme": "charmed-icons",
     "workbench.statusBar.visible": false,
 
@@ -79,7 +79,7 @@
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
-        "strings": true
+        "strings": true,
     },
 
     // Files
@@ -94,21 +94,21 @@
 
     // Formatters
     "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "ms-vscode.cpptools",
     },
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "ms-vscode.cpptools",
     },
     "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     // "[java]": {},
     // "[lua]": {}, // use selene
     "[luau]": {
-        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+        "editor.defaultFormatter": "JohnnyMorganz.stylua",
     },
     // "[python]": {},
     // "[rust]": {},
@@ -189,6 +189,6 @@
     // Codeium
     "codeium.enableConfig": {
         "*": true,
-        "luau": true
-    }
+        "luau": true,
+    },
 }
