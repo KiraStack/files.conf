@@ -14,9 +14,11 @@
 
     // Extensions
     "extensions.allowed": {
+        "littensy.charmed-icons": "stable", // Icons
         "ms-vscode.cpptools": "stable", // C/C++ LSP
         "JohnnyMorganz.luau-lsp": "stable", // ROBLOX LSP
         "esbenp.prettier-vscode": "stable", // Code formatting
+        "JohnnyMorganz.stylua": "stable", // Code formatting (temporary)
         "Codeium.codeium": "stable" // Autocompletion
         // ...any other extensions are bloat to be honest...!
     },
@@ -26,7 +28,7 @@
     "workbench.preferredDarkColorTheme": "Default Dark Modern",
     "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
     "workbench.preferredHighContrastColorTheme": "Default High Contrast",
-    "workbench.iconTheme": "vs-seti",
+    "workbench.iconTheme": "charmed-icons",
     "workbench.statusBar.visible": false,
 
     // Workspace
@@ -105,7 +107,9 @@
     },
     // "[java]": {},
     // "[lua]": {}, // use selene
-    // "[luau]": {}, // use selene
+    "[luau]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    },
     // "[python]": {},
     // "[rust]": {},
     // "[toml]": {},
